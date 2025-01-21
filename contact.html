@@ -1,24 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body>
     <header>
-        <article class="header_opties_container">
-            <a href="index.html" class="header_optie">Home</a>
-            <a href="over_mij.html" class="header_optie">Over mij</a>
-            <a href="portfolio.html" class="header_optie">Portfolio</a>
-            <a href="vaardigheden.html" class="header_optie">Vaardigheden</a>
-            <a href="cv.html" class="header_optie">CV</a>
-        </article>
-        <a href="contact.html" class="header_button">Contact</a>
+      <div class="hamburger-menu" id="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <article class="header_opties_container" id="header_opties_container">
+        <a href="index.html" class="header_optie">Home</a>
+        <a href="over_mij.html" class="header_optie">Over mij</a>
+        <a href="portfolio.html" class="header_optie">Portfolio</a>
+        <a href="vaardigheden.html" class="header_optie">Vaardigheden</a>
+        <a href="cv.html" class="header_optie">CV</a>
+      </article>
+      <a href="contact.html" class="header_button">Contact</a>
     </header>
-    <main>
-        <h1>Contact</h1>
+    <main class="contactpagina_main">
+      <article class="contactpagina">
+        <section class="contactpagina-half contactpagina-half-1">
+            <form action="https://formsubmit.co/dvdmijl17@gmail.com" method="POST">
+                <h2>Contacteer mij</h2>
+            
+                <label for="naam">Naam</label>
+                <input type="text" id="naam" name="naam" placeholder="Jouw naam" required>
+            
+                <label for="email">E-mailadres</label>
+                <input type="email" id="email" name="email" placeholder="Jouw e-mailadres" required>
+            
+                <label for="bericht">Bericht</label>
+                <textarea id="bericht" name="bericht" placeholder="Schrijf hier je bericht" required></textarea>
+            
+                <input type="hidden" name="_next" value="https://lively-truffle-9801da.netlify.app/bedankt.html">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Contact - Dani van der Mijl">
+                <input type="hidden" name="_template" value="table">
+            
+                <button type="submit">Verstuur</button>
+            </form>
+        </section>
+        <section class="contactpagina-half contactpagina-half-2">
+            <a href="https://github.com/Danivdmijl" target="_blank">
+                <article class="contact-opties">
+                  <div class="contact_opties_wrapper">
+                    <img src="afbeeldingen/github-logo.png" alt="Logo van Github" />
+                    <h3>Github</h3>
+                  </div>
+                  <div class="arrow-icon"></div>
+                </article>
+              </a>
+              <a href="https://nl.linkedin.com/in/dani-van-der-mijl-163246232" target="_blank">
+                <article class="contact-opties">
+                  <div class="contact_opties_wrapper">
+                    <img src="afbeeldingen/Linkedin-logo.png" alt="Logo van LinkedIn" />
+                    <h3>LinkedIn</h3>
+                  </div>
+                  <div class="arrow-icon"></div>
+                </article>
+              </a>
+              <a href="https://wa.me/31645211999" target="_blank">
+                <article class="contact-opties">
+                  <div class="contact_opties_wrapper">
+                    <img src="afbeeldingen/Whatsapp-logo.png" alt="Logo van WhatsApp" />
+                    <h3>WhatsApp</h3>
+                  </div>
+                  <div class="arrow-icon"></div>
+                </article>
+              </a>
+        </section>
+      </article>
     </main>
-</body>
+  </body>
 </html>

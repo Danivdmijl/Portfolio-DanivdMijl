@@ -22,11 +22,12 @@
         <span></span>
       </div>
       <article class="header_opties_container" id="header_opties_container">
-        <a href="index.html" class="header_optie">Home</a>
+        <a href="index.html" class="header_optie header_optie_actief">Home</a>
         <a href="over_mij.html" class="header_optie">Over mij</a>
         <a href="portfolio.html" class="header_optie">Portfolio</a>
         <a href="vaardigheden.html" class="header_optie">Vaardigheden</a>
         <a href="cv.html" class="header_optie">CV</a>
+        <a href="contact.html" class="header_optie header_optie_contact">Contact</a>
       </article>
       <a href="contact.html" class="header_button">Contact</a>
     </header>
@@ -37,16 +38,29 @@
         <h3 class="hero_container_title">Dani van der Mijl</h3>
       </article>
       <article class="hero_container">
-        <img
+        <img class="hero_container_profielfoto"
           src="afbeeldingen/dummypfp.png"
           alt="Een foto van mij, Dani van der Mijl"
         />
       </article>
-      <article class="hero_container hero_container_titels-rechts">
+      <article class="hero_container hero_container hero_container_titels hero_container_titels-rechts">
         <h3 class="hero_container_title-rechts">Front-end</h3>
         <h3 class="hero_container_title-rechts">Developer</h3>
         <h3 class="hero_container_title-rechts">Omgeving Alkmaar</h3>
       </article>
     </section>
+    <article class="hero_container hero_container_responsive">
+        <img class="hero_container_profielfoto" src="afbeeldingen/dummypfp.png" alt="Een foto van mij, Dani van der Mijl"/>    <div class="hero_tekst_container_responsive_wrapper">
+        <section class="hero_tekst_container_responsive">
+            <h3 class="hero_container_title_responsive hero_container_title_responsive-boven">Aangenaam,</h3>
+            <h3 class="hero_container_title_responsive hero_container_title_responsive-boven">mijn naam is</h3>
+            <h3 class="hero_container_title_responsive hero_container_title_responsive-boven">Dani van der Mijl</h3>
+        </section>
+        <section class="hero_tekst_container_responsive">
+            <h3 class="hero_container_title_responsive hero_container_title_responsive-onder">Front-end Developer</h3>
+            <h3 class="hero_container_title_responsive hero_container_title_responsive-onder">Omgeving Alkmaar</h3>
+        </section>
+        <button class="hero_container_responsive_button" onclick="window.location.href='contact.html'">Laten we kennismaken</button>    </div>
+    </article>
   </body>
 </html>
