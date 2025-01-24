@@ -13,7 +13,7 @@ html {
 body {
   font-size: 2rem;
   background: #232336;
-  padding: 0px 20px 0px 20px;
+  padding: 0px 2rem 0rem 2rem;
 }
 
 header {
@@ -293,7 +293,7 @@ header.menu-open {
 }
 
 .contactpagina_main {
-  padding: 0 10rem 0 10rem;;
+  padding: 0 10rem 0 10rem;
 }
 
 .contactpagina {
@@ -301,20 +301,160 @@ header.menu-open {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 3rem;
+  margin-top: 1rem;
   flex-direction: row;
   gap: 12.7rem;
+  flex-wrap: wrap;
 }
 
 .contactpagina-half {
-  width: 50%;
+  width: 40%;
   /* border: 1px solid red; */
-  height: 71.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 4.5rem;
+  margin-top: 30px;
+}
+
+.contactpagina-half-1 {
+  width: 60.1rem;
+  border-radius: 36px;
+  background: #161626;
+  padding: 3rem 4.3rem 3rem 4.3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0rem;
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.contactpagina-half-1 .contactformulier_wrapper:nth-child(1) {
+  animation: fadeInUp 1s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+.contactpagina-half-1 .contactformulier_wrapper:nth-child(2) {
+  animation: fadeInUp 1s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+.contactpagina-half-1 .contactformulier_wrapper:nth-child(3) {
+  animation: fadeInUp 1s ease-in-out forwards;
+  animation-delay: 0.8s;
+}
+
+.contactpagina-half-1 .contactformulier_button {
+  animation: fadeInUp 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.formtop {
+  width: 100%;
+  height: 6.3rem;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.5rem;
+  margin-bottom: 3rem;
+}
+.formtop_title {
+  font-size: 3.8rem;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.formmid {
+  width: 100%;
+  height: 49.7rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.contactformulier {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.contactformulier_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  opacity: 0;
+}
+
+.contactformulier_titel {
+  font-size: 2.5rem;
+  font-family: "Inter", sans-serif;
+  color: white;
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contactformulier_input {
+  width: 100%;
+  height: 7.5rem;
+  border-radius: 36px;
+  padding: 2.4rem 1rem 2.4rem 4.3rem;
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  background: #232336;
+  border-color: transparent;
+  color: white;
+  outline: none;
+}
+
+.contactformulier_bericht {
+  height: 13.5rem;
+  resize: none; 
+  white-space: pre-wrap; 
+  word-wrap: break-word; 
+  scrollbar-color: #888 #f0f0f0;
+}
+
+textarea::-webkit-scrollbar {
+  width: 8px;
+}
+textarea::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 4px;
+}
+textarea::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+textarea::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.contactformulier_button {
+  background-color: #297DBF; 
+  color: white;
+  width: 25rem; 
+  height: 5.2rem; 
+  font-size: 2.4rem;
+  padding: 1rem 9rem 1rem 9rem;
+  font-weight: bold;
+  border: none; 
+  border-radius: 36px;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  cursor: pointer; 
+  text-align: center;
+  opacity: 0;
+}
+
+.contactformulier_button:hover {
+  background-color: #1e5f8f; 
 }
 
 .contact-opties {
@@ -340,9 +480,14 @@ header.menu-open {
 .contact_opties_wrapper {
   display: flex;
   align-items: center;
-  font-size: 3.2rem;
+  font-size: 2.6rem;
   font-family: "Inter", sans-serif;
   gap: 1.5rem;
+}
+
+.contact_opties_logo {
+  width: 12.5rem;
+  height: 12.5rem;
 }
 
 .arrow-icon {
@@ -378,7 +523,6 @@ header.menu-open {
   animation: fadeInUp 1s ease-in-out forwards;
 }
 
-/* Add delays to each contact option in order */
 .contactpagina-half a:nth-child(1) .contact-opties {
   animation-delay: 0.2s;
 }
