@@ -1,0 +1,43 @@
+/* Large Screens (Laptops) */
+@media (max-width: 1024px) {
+    .contactpagina {
+        margin-top: 50px;
+        gap: 50px;
+        width: 100%;
+    }
+    .contactpagina-half {
+        margin-top: 0px;
+        width: 100%;
+    }
+    .contact-opties {
+        max-width: 61rem;
+    }
+  }
+
+@media (max-width: 767px) {
+    .formtop_title {
+        font-size: 2.5rem;
+    }
+    .formtop {
+        padding-bottom: 1rem;
+        height: auto;
+    }
+    .contactformulier_button {
+        width: 100%;
+    }
+    .contactpagina_main {
+        padding: 0rem;
+    }
+    .contact-opties {
+        width: 39rem;
+    }
+    .contact_opties_logo {
+        width: 8rem;
+        height: 8rem;
+    }
+    .arrow-icon::before {
+        width: 18px;
+        height: 18px;
+    }
+
+  }
