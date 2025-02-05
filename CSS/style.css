@@ -187,7 +187,7 @@ body:not(#__) .hero_container_responsive {
 }
 
 .header_button {
-  animation: pulse 11s ease-in-out infinite;
+  animation: pulse 15s ease-in-out infinite;
 }
 
 @keyframes fadeIn {

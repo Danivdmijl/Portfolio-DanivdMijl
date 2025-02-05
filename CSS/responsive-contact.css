@@ -1,5 +1,11 @@
+@media (max-width: 1453px) {
+    .contactpagina_main {
+        margin-bottom: 50px;
+    }
+}
+
 /* Large Screens (Laptops) */
-@media (max-width: 1024px) {
+@media (max-width: 1024.98px) {
     .contactpagina {
         margin-top: 50px;
         gap: 50px;
@@ -29,7 +35,7 @@
         padding: 0rem;
     }
     .contact-opties {
-        width: 39rem;
+        width: 33rem;
     }
     .contact_opties_logo {
         width: 8rem;
